@@ -169,21 +169,16 @@ require('lazy').setup {
       -- Enable the following language servers
       local servers = {
         clangd = {
-          single_file_support = false,
           capabilities = {
             offsetEncoding = { 'utf-16' },
           },
         },
         -- gopls = {},
-        pyright = {
-          single_file_support = false,
-        },
+        pyright = {},
         html = {},
         cssls = {},
         -- rust_analyzer = {},
-        tsserver = {
-          single_file_support = false,
-        },
+        tsserver = {},
         lua_ls = {
           settings = {
             Lua = {
