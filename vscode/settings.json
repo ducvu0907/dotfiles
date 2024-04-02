@@ -1,0 +1,16 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/kira/.config/vscode/init.vim",
+  "editor.cursorBlinking": "solid",
+  "html.autoCreateQuotes": false,
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": false,
+}
