@@ -9,7 +9,6 @@
   },
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.linux": "/home/kira/.config/vscode/init.vim",
-  "editor.cursorBlinking": "solid",
   "html.autoCreateQuotes": false,
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
