@@ -319,7 +319,6 @@ require('lazy').setup {
         'python',
         'fish',
         'javascript',
-        'java',
         'css',
         'markdown',
         'lua',
