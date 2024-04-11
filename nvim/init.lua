@@ -62,6 +62,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- plugins
 require('lazy').setup {
+  -- Auto closing pairs
+  { 'echasnovski/mini.pairs', version = '*', config = true },
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
   -- Adds git related signs to the gutter, as well as utilities for managing changes
