@@ -153,6 +153,9 @@ require('lazy').setup {
 
           -- Find references for the word under your cursor.
           map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
+
+          -- Opens a popup that displays documentation about the word under the cursor
+          map('K', vim.lsp.buf.hover, 'Hover Documentation')
         end,
       })
 
