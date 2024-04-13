@@ -6,7 +6,7 @@ set -gx EDITOR nvim
 # aliases
 alias ls "eza --long --header -g"
 alias vim nvim
-alias cat "bat --paging=never"
+alias cat "bat --paging=never --plain"
 
 # keybinds
 bind \cl forward-char
