@@ -98,7 +98,7 @@ require('lazy').setup {
         end,
       },
       -- Useful for getting pretty icons, but requires a Nerd Font.
-      { 'nvim-tree/nvim-web-devicons', enabled = true },
+      -- { 'nvim-tree/nvim-web-devicons', enabled = true },
     },
     config = function()
       -- [[ Configure Telescope ]]
