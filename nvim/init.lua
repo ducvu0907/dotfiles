@@ -23,6 +23,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.termguicolors = true
 
 -- keymaps
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -304,13 +305,10 @@ require('lazy').setup {
 
   -- colorscheme
   {
-    'sainnhe/gruvbox-material',
+    'savq/melange-nvim',
     priority = 1000,
     config = function()
-      vim.g.gruvbox_material_background = 'hard'
-      vim.g.gruvbox_material_foreground = 'original'
-      vim.g.gruvbox_material_better_performance = 1
-      vim.cmd 'colorscheme gruvbox-material'
+      vim.cmd.colorscheme 'melange'
     end,
   },
 
