@@ -8,5 +8,4 @@ if exists('g:vscode')
   nnoremap <S-tab> <Cmd>lua require('vscode-neovim').call('workbench.action.previousEditor')<CR>
   nnoremap <leader>\ <Cmd>lua require('vscode-neovim').call('workbench.action.splitEditorRight')<CR>
   nnoremap <leader>- <Cmd>lua require('vscode-neovim').call('workbench.action.splitEditorDown')<CR>
-	nnoremap <leader><leader> <Cmd>lua require('vscode-neovim').call('workbench.action.quickOpen')<CR>
 endif
