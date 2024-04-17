@@ -78,4 +78,8 @@
 		"command": "cursorRight",
 		"when": "terminalFocus"
 	},
+	{
+		"key": "ctrl+e",
+		"command": "-vscode-neovim.ctrl-e",
+	},
 ]
