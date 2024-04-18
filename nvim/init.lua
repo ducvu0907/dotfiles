@@ -305,10 +305,11 @@ require('lazy').setup {
 
   -- colorscheme
   {
-    'savq/melange-nvim',
+    'wincent/base16-nvim',
+    lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'melange'
+      vim.cmd [[colorscheme base16-gruvbox-dark-hard]]
     end,
   },
 
