@@ -305,11 +305,14 @@ require('lazy').setup {
 
   -- colorscheme
   {
-    'wincent/base16-nvim',
+    'sainnhe/gruvbox-material',
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd 'colorscheme base16-gruvbox-dark-hard'
+      vim.g.gruvbox_material_background = 'hard'
+      vim.g.gruvbox_material_foreground = 'original'
+      vim.g.gruvbox_material_better_performance = 1
+      vim.cmd 'colorscheme gruvbox-material'
     end,
   },
 
