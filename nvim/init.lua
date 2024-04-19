@@ -24,6 +24,7 @@ vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.termguicolors = true
+vim.opt.cursorline = true
 
 -- keymaps
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
