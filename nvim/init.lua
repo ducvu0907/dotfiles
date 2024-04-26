@@ -24,7 +24,7 @@ vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.termguicolors = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 
 -- keymaps
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -303,18 +303,40 @@ require('lazy').setup {
       }
     end,
   },
-
   -- colorscheme
   {
-    'sainnhe/gruvbox-material',
+    'ellisonleao/gruvbox.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-      vim.g.gruvbox_material_background = 'hard'
-      vim.g.gruvbox_material_foreground = 'original'
-      vim.g.gruvbox_material_better_performance = 1
-      vim.cmd 'colorscheme gruvbox-material'
+      vim.cmd [[colorscheme gruvbox]]
     end,
+  },
+  -- statusline
+  -- {
+  --   'nvim-lualine/lualine.nvim',
+  --   opts = {
+  --     options = {
+  --       icons_enabled = false,
+  --       theme = 'powerline',
+  --       component_separators = {
+  --         left = { '|' },
+  --         right = { '|' },
+  --       },
+  --       globalstatus = true,
+  --     },
+  --   },
+  --   config = function(_, opts)
+  --     vim.opt.showmode = false
+  --     require('lualine').setup(opts)
+  --   end,
+  -- },
+
+  -- auto closing pairs
+  {
+    'echasnovski/mini.pairs',
+    version = false,
+    config = true,
   },
 
   { -- Highlight, edit, and navigate code
