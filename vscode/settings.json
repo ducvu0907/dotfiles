@@ -4,12 +4,118 @@
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.linux": "/home/zxd/.dotfiles/vscode/init.vim",
+  // neovim config
+  // "extensions.experimental.affinity": {
+  //   "asvetliakov.vscode-neovim": 1,
+  // },
+  // "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  // "vscode-neovim.neovimInitVimPaths.linux": "/home/zxd/.dotfiles/vscode/init.vim",
   "html.autoCreateQuotes": false,
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
+  // vim config
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.handleKeys": {
+    "<C-j>": false,
+    "<C-k>": false,
+    "<C-l>": false,
+    "<C-h>": false,
+    "<C-e>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-[>"
+      ],
+      "commands": [
+        ":noh"
+      ],
+    },
+    {
+      "before": [
+        "<C-a>"
+      ],
+      "after": [
+        "g",
+        "g",
+        "<S-v>",
+        "<S-g>"
+      ]
+    },
+    {
+      "before": [
+        "+"
+      ],
+      "after": [
+        "<C-a>"
+      ]
+    },
+    {
+      "before": [
+        "-"
+      ],
+      "after": [
+        "<C-x>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "\\"
+      ],
+      "commands": [
+        ":vsplit"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "-"
+      ],
+      "commands": [
+        ":split"
+      ],
+    },
+    {
+      "before": [
+        "<tab>"
+      ],
+      "commands": [
+        ":bnext"
+      ],
+    },
+    {
+      "before": [
+        "<S-tab>"
+      ],
+      "commands": [
+        ":bprev"
+      ],
+    },
+    {
+      "before": [
+        "<S-k>"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<S-y>"
+      ],
+      "after": [
+        "v",
+        "$",
+        "y"
+      ]
+    },
+  ],
 }

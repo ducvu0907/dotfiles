@@ -3,7 +3,7 @@
 
 ## Vscode plugins
 * [python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-* [vscode-neovim](https://github.com/vscode-neovim/vscode-neovim)
+* [vscodevim](https://github.com/VSCodeVim/Vim)
 * [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Fish & Nvim

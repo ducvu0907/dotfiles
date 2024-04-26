@@ -13,22 +13,22 @@
   {
     "key": "ctrl+k",
     "command": "workbench.action.navigateUp",
-    "when": "!editorTextFocus || neovim.mode == 'normal'"
+    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
   },
   {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown",
-    "when": "!editorTextFocus || neovim.mode == 'normal'"
+    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
   },
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft",
-    "when": "!editorTextFocus || neovim.mode == 'normal'"
+    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
   },
   {
     "key": "ctrl+l",
     "command": "workbench.action.navigateRight",
-    "whn": "!editorTextFocus || neovim.mode == 'normal'"
+    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
   },
   {
     "key": "shift+enter",
@@ -41,18 +41,8 @@
     "when": "terminal.active"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
     "key": "ctrl+n",
     "command": "workbench.action.terminal.selectNextSuggestion",
-    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
-  },
-  {
-    "key": "down",
-    "command": "-workbench.action.terminal.selectNextSuggestion",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
   },
   {
@@ -61,25 +51,51 @@
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
   },
   {
-    "key": "up",
-    "command": "-workbench.action.terminal.selectPrevSuggestion",
-    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
-  },
-  {
     "key": "ctrl+p",
-    "command": "-workbench.action.quickOpen"
+    "command": "-workbench.action.quickOpen",
   },
   {
     "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile"
+    "command": "-workbench.action.files.newUntitledFile",
   },
-	{
-		"key": "ctrl+l",
-		"command": "cursorRight",
-		"when": "terminalFocus"
-	},
-	{
-		"key": "ctrl+e",
-		"command": "-vscode-neovim.ctrl-e",
-	},
+  {
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "Shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "Ctrl+[",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "filesExplorerFocus && inputFocus"
+  }
 ]
