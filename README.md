@@ -4,7 +4,6 @@
 ## Vscode plugins
 * [python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [vscodevim](https://github.com/VSCodeVim/Vim)
-* [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Fish & Nvim
 * [curl](https://github.com/curl/curl)
