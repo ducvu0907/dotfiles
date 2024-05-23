@@ -1,11 +1,9 @@
-# Dependencies & plugins
-* buils-essential (gcc, python, node, java, make)
-
-## Vscode plugins
+# Vscode
 * [python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [vscodevim](https://github.com/VSCodeVim/Vim)
+* [tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-## Fish & Nvim
+# Fish & Nvim
 * [curl](https://github.com/curl/curl)
 * [ripgrep](https://github.com/BurntSushi/ripgrep)
 * [fd](https://github.com/sharkdp/fd)

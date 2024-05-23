@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 vim.g.python_recommended_style = false
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 vim.opt.mouse = "a"
 vim.opt.showmode = true
 vim.opt.clipboard = ""
@@ -21,7 +23,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.backspace = { "start", "eol", "indent" }
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 vim.opt.cursorline = false
 
 -- keymaps
@@ -303,39 +305,13 @@ require("lazy").setup({
 	},
 	-- colorscheme
 	{
-		"sainnhe/gruvbox-material",
+		"sainnhe/sonokai",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.g.gruvbox_material_better_performance = 1
-			vim.cmd.colorscheme("gruvbox-material")
+			vim.g.sonokai_better_performance = 1
+			vim.cmd.colorscheme("sonokai")
 		end,
-	},
-	-- statusline
-	-- {
-	--   'nvim-lualine/lualine.nvim',
-	--   opts = {
-	--     options = {
-	--       icons_enabled = false,
-	--       theme = 'powerline',
-	--       component_separators = {
-	--         left = { '|' },
-	--         right = { '|' },
-	--       },
-	--       globalstatus = true,
-	--     },
-	--   },
-	--   config = function(_, opts)
-	--     vim.opt.showmode = false
-	--     require('lualine').setup(opts)
-	--   end,
-	-- },
-
-	-- auto closing pairs
-	{
-		"echasnovski/mini.pairs",
-		version = false,
-		config = true,
 	},
 
 	{ -- Highlight, edit, and navigate code
@@ -364,7 +340,7 @@ require("lazy").setup({
 				--  the list of additional_vim_regex_highlighting and disabled languages for indent.
 				additional_vim_regex_highlighting = { "ruby" },
 			},
-			indent = { enable = false, disable = { "ruby" } },
+			indenti = { enable = false, disable = { "ruby" } },
 		},
 		config = function(_, opts)
 			-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
