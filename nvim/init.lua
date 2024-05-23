@@ -173,8 +173,6 @@ require("lazy").setup({
 				clangd = {},
 				-- gopls = {},
 				pyright = {},
-				html = {},
-				cssls = {},
 				-- rust_analyzer = {},
 				tsserver = {},
 				lua_ls = {
