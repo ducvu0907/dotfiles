@@ -1,4 +1,10 @@
+[window]
+dynamic_title = false
+
 [keyboard]
 bindings = [
 { key = "Back", mods = "Control", chars = "\u0017" }
 ]
+
+[font]
+size = 10
