@@ -4,7 +4,7 @@ set fish_greeting ""
 set -gx EDITOR nvim
 
 # aliases
-alias ls "eza --long --header -g"
+alias ls "eza"
 alias vim nvim
 alias cat "bat --paging=never --plain"
 
