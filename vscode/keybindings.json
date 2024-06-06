@@ -31,11 +31,6 @@
     "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
   },
   {
-    "key": "shift+enter",
-    "command": "-python.execSelectionInTerminal",
-    "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
-  },
-  {
     "key": "ctrl+t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
@@ -97,5 +92,10 @@
     "key": "Ctrl+[",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "filesExplorerFocus && inputFocus"
+  },
+	{
+    "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorTextFocus && !config.python.REPL.sendToNativeREPL && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive'"
   }
 ]
