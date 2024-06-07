@@ -24,14 +24,6 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
-        "<C-[>"
-      ],
-      "commands": [
-        ":noh"
-      ],
-    },
-    {
-      "before": [
         "<C-a>"
       ],
       "after": [
