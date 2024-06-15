@@ -4,7 +4,6 @@
 * [tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 # Shell
-* [curl](https://github.com/curl/curl)
 * [ripgrep](https://github.com/BurntSushi/ripgrep)
 * [fd](https://github.com/sharkdp/fd)
 * [bat](https://github.com/sharkdp/bat)

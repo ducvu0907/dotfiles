@@ -8,4 +8,3 @@ bindings = [
 
 [font]
 normal = { family = "Hack Nerd Font Mono" }
-size = 11
