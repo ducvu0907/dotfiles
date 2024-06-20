@@ -121,7 +121,10 @@ require("lazy").setup({
 
 			-- See `:help telescope.builtin`
 			local builtin = require("telescope.builtin")
-			vim.keymap.set("n", "<leader><leader>", "<Cmd>Telescope<CR>", { desc = "start telescope" })
+			vim.keymap.set("n", "<leader><leader>", "<Cmd>Telescope<CR>", { desc = "telescope" })
+			vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "search files" })
+			vim.keymap.set("n", "<leader>d", builtin.diagnostics, { desc = "search diagnostics" })
+			vim.keymap.set("n", "<leader>g", builtin.live_grep, { desc = "search by grep" })
 		end,
 	},
 
