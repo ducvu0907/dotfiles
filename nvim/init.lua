@@ -23,7 +23,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.backspace = { "start", "eol", "indent" }
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 vim.opt.cursorline = false
 
 -- keymaps
@@ -305,12 +305,11 @@ require("lazy").setup({
 	},
 	-- colorscheme
 	{
-		"sainnhe/sonokai",
+		"wincent/base16-nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.g.sonokai_better_performance = 1
-			vim.cmd.colorscheme("sonokai")
+			vim.cmd.colorscheme("base16-gruvbox-dark-hard")
 		end,
 	},
 
