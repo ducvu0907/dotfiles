@@ -17,6 +17,8 @@ nmap <leader>- :sp<CR>
 nmap <C-a> ggVG
 nmap <C-o> :action Back<CR>
 nmap <C-i> :action Forward<CR>
+nmap <tab> :bnext<CR>
+nmap <S-tab> :bprev<CR>
 
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'

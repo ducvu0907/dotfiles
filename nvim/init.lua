@@ -2,7 +2,6 @@
 vim.g.mapleader = " "
 vim.g.python_recommended_style = false
 vim.opt.number = true
-vim.opt.relativenumber = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.mouse = "a"

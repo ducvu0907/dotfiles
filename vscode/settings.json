@@ -1,5 +1,4 @@
 {
-  "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
