@@ -1,0 +1,3 @@
+Escape -> Ctrl [ 
+Go to File -> Ctrl E
+Search everywhere -> Ctrl Shift P

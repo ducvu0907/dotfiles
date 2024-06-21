@@ -1,0 +1,22 @@
+let mapleader = " "
+
+set hlsearch
+set visualbell
+set scrolloff=5
+set incsearch
+
+nmap + <C-a>
+nmap - <C-x>
+nmap <S-y> v$y
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <leader>\\ :vs<CR>
+nmap <leader>- :sp<CR>
+nmap <C-a> ggVG
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
