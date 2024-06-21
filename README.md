@@ -1,3 +1,6 @@
+# Intellij
+* [IdeaVim](https://github.com/JetBrains/ideavim)
+
 # Vscode
 * [python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [vscodevim](https://github.com/VSCodeVim/Vim)
