@@ -17,3 +17,4 @@
 * [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 * [eza](https://github.com/eza-community/eza)
 * [nvm.fish](https://github.com/jorgebucaran/nvm.fish)
+* [ranger](https://github.com/ranger/ranger)
