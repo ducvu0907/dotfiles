@@ -13,6 +13,7 @@
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.highlightedyank.enable": true,
+  "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-j>": false,
     "<C-k>": false,

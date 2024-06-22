@@ -1,20 +1,23 @@
 let mapleader = " "
 
 set hlsearch
+set smartcase
 set visualbell
 set scrolloff=5
 set incsearch
+set clipboard=unnamedplus
+set clipboard^=ideaput
 
-nmap + <C-a>
-nmap - <C-x>
-nmap <S-y> v$y
+nnoremap + <C-a>
+nnoremap - <C-x>
+nnoremap <C-a> ggVG
+nnoremap Y y$
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <leader>\\ :vs<CR>
 nmap <leader>- :sp<CR>
-nmap <C-a> ggVG
 nmap <C-o> :action Back<CR>
 nmap <C-i> :action Forward<CR>
 nmap <tab> :bnext<CR>
