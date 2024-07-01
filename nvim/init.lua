@@ -303,14 +303,12 @@ require("lazy").setup({
 		end,
 	},
 
-	{ --colorscheme
-		"sainnhe/sonokai",
+	{ -- colorscheme
+		"ellisonleao/gruvbox.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.opt.termguicolors = false
-			vim.g.sonokai_better_performance = 1
-			vim.cmd("colorscheme sonokai")
+			vim.cmd([[colorscheme gruvbox]])
 		end,
 	},
 
