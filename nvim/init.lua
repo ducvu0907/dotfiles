@@ -304,11 +304,11 @@ require("lazy").setup({
 	},
 
 	{ -- colorscheme
-		"ellisonleao/gruvbox.nvim",
+		"wincent/base16-nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme gruvbox]])
+			vim.cmd("colorscheme base16-gruvbox-dark-hard")
 		end,
 	},
 
