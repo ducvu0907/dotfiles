@@ -304,13 +304,6 @@ require("lazy").setup({
 	},
 
 	{ -- colorscheme
-		"sainnhe/gruvbox-material",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.g.gruvbox_material_better_performance = 1
-			vim.cmd("colorscheme gruvbox-material")
-		end,
 	},
 
 	{ -- Highlight, edit, and navigate code
