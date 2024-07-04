@@ -304,6 +304,15 @@ require("lazy").setup({
 	},
 
 	{ -- colorscheme
+		"ramojus/mellifluous.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("mellifluous").setup({
+				color_set = "tender",
+			})
+			vim.cmd("colorscheme mellifluous")
+		end,
 	},
 
 	{ -- Highlight, edit, and navigate code
