@@ -304,12 +304,11 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"sainnhe/sonokai",
+		"datsfilipe/min-theme.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.opt.termguicolors = false
-			vim.cmd("colorscheme sonokai")
+			vim.cmd.colorscheme("min-theme")
 		end,
 	},
 
