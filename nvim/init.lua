@@ -303,15 +303,12 @@ require("lazy").setup({
 		end,
 	},
 
-	{ -- colorscheme
-		"ramojus/mellifluous.nvim",
+	{ --colorscheme
+		"Mofiqul/adwaita.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("mellifluous").setup({
-				color_set = "tender",
-			})
-			vim.cmd("colorscheme mellifluous")
+			vim.cmd([[colorscheme adwaita]])
 		end,
 	},
 
