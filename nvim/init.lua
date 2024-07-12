@@ -304,11 +304,12 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"Mofiqul/adwaita.nvim",
+		"sainnhe/sonokai",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme adwaita]])
+			vim.opt.termguicolors = false
+			vim.cmd("colorscheme sonokai")
 		end,
 	},
 
