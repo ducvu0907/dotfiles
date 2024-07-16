@@ -304,12 +304,14 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"sainnhe/sonokai",
+		"ramojus/mellifluous.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.opt.termguicolors = false
-			vim.cmd.colorscheme("sonokai")
+			require("mellifluous").setup({
+				color_set = "tender",
+			})
+			vim.cmd.colorscheme("mellifluous")
 		end,
 	},
 
