@@ -1,9 +1,8 @@
 {
   "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
   "html.autoCreateQuotes": false,
-  "editor.formatOnSave": true,
-  "editor.stickyScroll.enabled": false,
   // vim config
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
@@ -22,34 +21,7 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
-        "<C-a>"
-      ],
-      "after": [
-        "g",
-        "g",
-        "<S-v>",
-        "<S-g>"
-      ]
-    },
-    {
-      "before": [
-        "+"
-      ],
-      "after": [
-        "<C-a>"
-      ]
-    },
-    {
-      "before": [
-        "-"
-      ],
-      "after": [
-        "<C-x>"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
+        "<C-w>",
         "\\"
       ],
       "commands": [
@@ -58,7 +30,7 @@
     },
     {
       "before": [
-        "<leader>",
+        "<C-w>",
         "-"
       ],
       "commands": [

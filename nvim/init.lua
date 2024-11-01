@@ -27,17 +27,11 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = false
 
 -- keymaps
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
-vim.keymap.set("n", "+", "<C-a>")
-vim.keymap.set("n", "-", "<C-x>")
-vim.keymap.set("n", "<C-a>", "gg<S-v>G")
-vim.keymap.set("n", "<leader>\\", ":vsplit<Return>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>-", ":split<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-w>\\", ":vsplit<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-w>-", ":split<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<tab>", ":bnext<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<S-tab>", ":bprev<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-s>", "<C-z>", { noremap = true, silent = true })
 
 -- autocmds
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -63,6 +57,12 @@ vim.opt.rtp:prepend(lazypath)
 
 -- plugins
 require("lazy").setup({
+	-- disable luarocks
+	rocks = {
+		enabled = false,
+	},
+	-- indent detection
+	{ "tpope/vim-sleuth" },
 	-- "gc" to comment visual regions/lines
 	{ "numToStr/Comment.nvim", opts = {} },
 	-- Adds git related signs to the gutter, as well as utilities for managing changes
@@ -122,8 +122,7 @@ require("lazy").setup({
 			-- See `:help telescope.builtin`
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader><leader>", "<Cmd>Telescope<CR>", { desc = "telescope" })
-			vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "search files" })
-			vim.keymap.set("n", "<leader>d", builtin.diagnostics, { desc = "search diagnostics" })
+			vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "find files" })
 			vim.keymap.set("n", "<leader>g", builtin.live_grep, { desc = "search by grep" })
 		end,
 	},
@@ -172,11 +171,11 @@ require("lazy").setup({
 
 			-- Enable the following language servers
 			local servers = {
-				clangd = {},
-				-- gopls = {},
-				pyright = {},
-				-- rust_analyzer = {},
-				tsserver = {},
+				-- clangd = {},
+				-- -- gopls = {},
+				-- pyright = {},
+				-- -- rust_analyzer = {},
+				-- tsserver = {},
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -305,14 +304,13 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"ramojus/mellifluous.nvim",
+		"sainnhe/sonokai",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("mellifluous").setup({
-				color_set = "tender",
-			})
-			vim.cmd.colorscheme("mellifluous")
+			vim.opt.termguicolors = false
+			vim.g.sonokai_better_performance = true
+			vim.cmd("colorscheme sonokai")
 		end,
 	},
 
@@ -321,16 +319,17 @@ require("lazy").setup({
 		build = ":TSUpdate",
 		opts = {
 			ensure_installed = {
+				"bash",
 				"c",
 				"cpp",
 				"python",
-				"fish",
 				"javascript",
+				"typescript",
+				"java",
 				"css",
 				"markdown",
 				"lua",
 				"html",
-				"vim",
 				"vimdoc",
 			},
 			-- Autoinstall languages that are not installed
@@ -340,9 +339,9 @@ require("lazy").setup({
 				-- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
 				--  If you are experiencing weird indenting issues, add the language to
 				--  the list of additional_vim_regex_highlighting and disabled languages for indent.
-				additional_vim_regex_highlighting = { "ruby" },
+				-- additional_vim_regex_highlighting = { "ruby" },
 			},
-			indent = { enable = true, disable = { "ruby", "python" } },
+			indent = { enable = false, disable = {} },
 		},
 		config = function(_, opts)
 			-- [[ Configure Treesitter ]] See `:help nvim-treesitter`

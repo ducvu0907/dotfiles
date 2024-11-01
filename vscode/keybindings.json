@@ -6,31 +6,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "escape",
-    "command": "-workbench.action.closeQuickOpen",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.navigateUp",
-    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.navigateDown",
-    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.navigateLeft",
-    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.navigateRight",
-    "when": "!editorTextFocus || neovim.mode == 'normal' || vim.mode == 'Normal'"
-  },
-  {
     "key": "ctrl+t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
@@ -47,16 +22,11 @@
   },
   {
     "key": "ctrl+p",
-    "command": "-workbench.action.quickOpen",
+    "command": "-workbench.action.quickOpen"
   },
   {
     "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile",
-  },
-  {
-    "key": "ctrl+l",
-    "command": "cursorRight",
-    "when": "terminalFocus"
+    "command": "-workbench.action.files.newUntitledFile"
   },
   {
     "key": "ctrl+n",
@@ -68,14 +38,4 @@
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
-  {
-    "key": "Ctrl+[",
-    "command": "workbench.files.action.focusFilesExplorer",
-    "when": "filesExplorerFocus && inputFocus"
-  },
-	{
-    "key": "shift+enter",
-    "command": "-python.execSelectionInTerminal",
-    "when": "editorTextFocus && !config.python.REPL.sendToNativeREPL && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive'"
-  }
 ]
