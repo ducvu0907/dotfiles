@@ -29,8 +29,8 @@ vim.opt.cursorline = false
 -- keymaps
 vim.keymap.set("n", "<C-w>\\", ":vsplit<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-w>-", ":split<Return>", { noremap = true, silent = true })
-vim.keymap.set("n", "<tab>", ":bnext<Return>", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-tab>", ":bprev<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "<tab>", ":tabnext<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-tab>", ":tabprev<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-s>", "<C-z>", { noremap = true, silent = true })
 
 -- autocmds
