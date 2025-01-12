@@ -31,7 +31,6 @@ vim.keymap.set("n", "<C-w>\\", ":vsplit<Return>", { noremap = true, silent = tru
 vim.keymap.set("n", "<C-w>-", ":split<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<tab>", ":tabnext<Return>", { noremap = true, silent = true })
 vim.keymap.set("n", "<S-tab>", ":tabprev<Return>", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-s>", "<C-z>", { noremap = true, silent = true })
 
 -- autocmds
 vim.api.nvim_create_autocmd("TextYankPost", {
