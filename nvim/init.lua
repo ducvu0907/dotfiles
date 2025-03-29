@@ -303,13 +303,13 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"pappasam/papercolor-theme-slim",
+		"sainnhe/sonokai",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.opt.termguicolors = false
-			-- vim.g.sonokai_better_performance = true
-			vim.cmd("colorscheme PaperColorSlim")
+			vim.opt.termguicolors = false
+			vim.g.sonokai_better_performance = true
+			vim.cmd("colorscheme sonokai")
 		end,
 	},
 
