@@ -1,6 +1,5 @@
 {
   "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
   "html.autoCreateQuotes": false,
   // vim config
