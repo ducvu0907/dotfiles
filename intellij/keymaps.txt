@@ -1,5 +1,6 @@
 Escape -> Ctrl-[ 
 Go to File -> Ctrl-E
 Search everywhere -> Ctrl-Shift-P
-Toggle Terminal -> Ctrl-T
-Select next, previous in terminal: Ctrl-N, Ctrl-P
+Terminal -> Ctrl-T
+Select block below in terminal: Ctrl-N
+Select block above in terminal: Ctrl-P
