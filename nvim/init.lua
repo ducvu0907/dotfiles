@@ -303,13 +303,13 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"olimorris/onedarkpro.nvim",
+		"nyoom-engineering/oxocarbon.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			-- vim.opt.termguicolors = false
 			-- vim.g.sonokai_better_performance = true
-			vim.cmd("colorscheme onedark_dark")
+			vim.cmd("colorscheme oxocarbon")
 		end,
 	},
 
