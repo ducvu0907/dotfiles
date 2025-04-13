@@ -17,9 +17,9 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = "split"
 vim.opt.hlsearch = true
 vim.opt.splitkeep = "cursor"
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.backspace = { "start", "eol", "indent" }
@@ -303,13 +303,13 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"nyoom-engineering/oxocarbon.nvim",
+		"scottmckendry/cyberdream.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			-- vim.opt.termguicolors = false
 			-- vim.g.sonokai_better_performance = true
-			vim.cmd("colorscheme oxocarbon")
+			vim.cmd("colorscheme cyberdream")
 		end,
 	},
 
