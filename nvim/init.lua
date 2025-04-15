@@ -303,13 +303,13 @@ require("lazy").setup({
 	},
 
 	{ --colorscheme
-		"scottmckendry/cyberdream.nvim",
+		"luisiacc/gruvbox-baby",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			-- vim.opt.termguicolors = false
 			-- vim.g.sonokai_better_performance = true
-			vim.cmd("colorscheme cyberdream")
+			vim.cmd("colorscheme gruvbox-baby")
 		end,
 	},
 
