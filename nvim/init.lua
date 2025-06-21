@@ -17,14 +17,15 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = "split"
 vim.opt.hlsearch = true
 vim.opt.splitkeep = "cursor"
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.backspace = { "start", "eol", "indent" }
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 vim.opt.cursorline = false
+vim.opt.spell = false
 
 -- keymaps
 vim.keymap.set("n", "<C-w>\\", ":vsplit<Return>", { noremap = true, silent = true })
@@ -130,8 +131,10 @@ require("lazy").setup({
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			-- Automatically install LSPs and related tools to stdpath for Neovim
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
+			-- mason v2 is breaking the config so we temporarily migrate to stable version
+			{ "williamboman/mason.nvim", version = "1.10.0" },
+			{ "williamboman/mason-lspconfig.nvim", version = "1.29.0" },
+
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 			{ "folke/neodev.nvim", opts = {} },
@@ -302,14 +305,13 @@ require("lazy").setup({
 		end,
 	},
 
-	{ --colorscheme
-		"luisiacc/gruvbox-baby",
+	-- colorscheme
+	{
+		"WTFox/jellybeans.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.opt.termguicolors = false
-			-- vim.g.sonokai_better_performance = true
-			vim.cmd("colorscheme gruvbox-baby")
+			vim.cmd("colorscheme jellybeans")
 		end,
 	},
 

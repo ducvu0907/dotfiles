@@ -5,3 +5,6 @@ dynamic_title = false
 bindings = [
 { key = "Back", mods = "Control", chars = "\u0017" }
 ]
+
+[font]
+normal = { family = "Liberation Mono" }

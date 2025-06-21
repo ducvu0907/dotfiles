@@ -4,3 +4,7 @@ Search everywhere -> Ctrl-Shift-P
 Terminal -> Ctrl-T
 Select block below in terminal: Ctrl-N
 Select block above in terminal: Ctrl-P
+Change font size with Ctrl + Wheel: in all editors
+Tab size: 2
+Indent: 2
+Continuation: 4
